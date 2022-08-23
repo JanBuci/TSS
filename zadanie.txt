@@ -1,0 +1,42 @@
+Dobry den
+
+Posielam zadanie v suvislosti s pohovorom.
+
+ 
+
+Vyrobit stranku (tabulku) kde sa nacitaju data z XML z url    https://www.tssgroup.sk/
+nacitat vsetky polozky kde Category id='QI90000101'
+
+ 
+
+Potrebujem vlastnosti :
+
+Name,
+
+ShortDescription,
+
+OnStock,
+
+PictureMain,
+
+WEIGHT
+
+ 
+
+Chceme mat moznost zoradit produkty podla stlpca NAME, OnStock, Weight.
+
+Ku kazdemu riadku potrebujeme input pole „ks do objednavky“. Do tohto pola vlozim pocet ks o kolko produktov mam zaujem objednat.
+
+Tlacitkom Ulozit objednavku si ulozim do DB (ID a pocet ks) kolko produktov chcem objednat.
+
+ 
+
+Je potrebne pouzit dizajn (minimalne farebnu paletu + fonty) z www.tssgroup.sk
+
+ 
+
+Vyuzite PHP najlepsie FW LARAVEL.“
+
+ 
+
+V pripade otazok ma nevahajte kontaktovat.
