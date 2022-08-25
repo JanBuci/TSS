@@ -31,12 +31,15 @@ class IndexController extends Controller
      * @param $data
      * @return array|null
      */
-    private function filterXMLData($data){
+    private function filterXMLData($data)
+    {
         $filterArr = array();
-        foreach ($data as $dataItem){
-            if ($dataItem["Category"]["@attributes"]["id"] === env("FILTER_BY_CATEGORY_ID"))
-                $filterArr[] = $dataItem;
+        foreach ($data as $dataItem) {
+            if (isset($dataItem["Category"])) {
+                if (isset($dataItem["Category"]["@attributes"]["id"]) && $dataItem["Category"]["@attributes"]["id"] === env("FILTER_BY_CATEGORY_ID"))
+                    $filterArr[] = $dataItem;
+            }
         }
-        return $filterArr ? : null;
+        return $filterArr ?: null;
     }
 }
